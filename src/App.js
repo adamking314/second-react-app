@@ -19,7 +19,7 @@ const App = () => {
     <Router>
       <div className="container">
         <h1>Currency converter </h1>
-        <nav>
+        <nav className="nav">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -36,10 +36,8 @@ const App = () => {
         <Route path="/" exact component={Home} />
         <Route path="/about/" component={About} />
         <Route path="/contact/" component={Contact} />
-
-
-          <div className="amount">
-           <label> Amount: <input type="number"> </input> </label> 
+        <div className="amount">
+           <p> Amount: </p>   <input />
           </div>
           <div className="from-to">
             <div className="from">
@@ -69,10 +67,10 @@ const App = () => {
             <p> Amount in currency</p>
           </div>
       </div>
-      <footer>
-
-      </footer>
-    </Router>
+      <div className="exchangeRate">
+        <h1>Exchange Rate</h1>
+      </div>
+   </Router>
   );
 }
 
