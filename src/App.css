@@ -111,10 +111,31 @@ nav li a:hover {
   margin: 10px;
 }
 
+.chart-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas{
+  max-width: 70%;
+  max-height: 70%;
+  padding-bottom: 70px;
+}
+
 @media screen and (max-width: 750px) {
 
   .dropdown-menus{
     flex-direction: column;
+    text-align: justify;
+  }
+
+  .from{
+    padding-right: 0px;
+  }
+
+  .to{
+    padding-left: 0px;
   }
 
 }
